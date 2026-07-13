@@ -47,3 +47,9 @@
 # Misc
 *.env text eol=lf
 *.lock text eol=lf
+# Paths excluded from `git archive` / subtree-style exports of this tree.
+# (Also ignored by .gitignore; listed here so archive/export tooling skips them.)
+node_modules/ export-ignore
+.svelte-kit/ export-ignore
+build/ export-ignore
+.build/ export-ignore
